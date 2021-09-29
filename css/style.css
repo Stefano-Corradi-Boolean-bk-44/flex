@@ -1,0 +1,386 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2{
+  text-align: center;
+  margin: 20px 0 10px 0;
+}
+
+/* ESEMPIO 1 */
+
+/*di default la diretion è row*/
+.flex-container-1{
+  display: flex;
+  width: 800px;
+  height: 500px;
+  margin: auto;
+  background-color: aquamarine;
+}
+
+.flex-container-1 .box{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 10px;
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  font-size: 40px;
+}
+
+
+
+
+/* ESEMPIO 2 */
+
+.flex-container-2{
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  height: 500px;
+  margin: auto;
+  background-color: aquamarine;
+}
+
+.flex-container-2 .box{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 10px;
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  font-size: 40px;
+}
+
+/* ESEMPIO 3 */
+
+.flex-container-3{
+  display: flex;
+  flex-direction:row-reverse;
+  width: 800px;
+  height: 500px;
+  margin: auto;
+  background-color: aquamarine;
+}
+
+.flex-container-3 .box{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 10px;
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  font-size: 40px;
+}
+
+/* ESEMPIO 4 */
+
+.flex-container-4{
+  display: flex;
+  flex-direction:column-reverse;
+  width: 800px;
+  height: 500px;
+  margin: auto;
+  background-color: aquamarine;
+}
+
+.flex-container-4 .box{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 10px;
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  font-size: 40px;
+}
+
+/* ESEMPIO 5 */
+
+.flex-container-5{
+  display: flex;
+  /* justify-content: flex-end; */
+  /* justify-content:space-around; */
+  /* justify-content:space-evenly; */
+  justify-content:space-between;
+  width: 800px;
+  height: 500px;
+  margin: auto;
+  background-color: aquamarine;
+}
+
+.flex-container-5 .box{
+  width: 18%;
+  /* width: 100px;
+  height: 100px; */
+  background-color: red;
+  margin: 10px 0;
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  font-size: 40px;
+}
+
+.flex-container-5 .due{
+  /* width: 300px; */
+  width: 60%;
+}
+
+/* ESEMPIO 6 */
+
+.flex-container-6{
+  display: flex;
+  justify-content: center;
+  width: 800px;
+  height: 500px;
+  margin: auto;
+  background-color: aquamarine;
+}
+
+.flex-container-6 .box{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 10px;
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  font-size: 40px;
+}
+
+/* ESEMPIO 7 */
+
+.flex-container-7{
+
+  /*con questi 3 comandi posiziono i centro gli elementi*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 80%;
+  height: 500px;
+  margin: auto;
+  background-color: aquamarine;
+}
+
+.flex-container-7 .box{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 10px;
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  font-size: 40px;
+}
+
+/* ESEMPIO 8 */
+
+.flex-container-8{
+  display: flex;
+  /* align-items:flex-start; */
+  /* align-items:flex-end; */
+  /* align-items:flex-end; */
+  align-items:baseline;
+
+  width: 80%;
+  height: 500px;
+  margin: auto;
+  background-color: aquamarine;
+}
+
+.flex-container-8 .box{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 10px;
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  font-size: 40px;
+}
+
+.flex-container-8 .due{
+  height: 300px;
+  line-height: 30px;
+}
+.flex-container-8 .tre{
+  height: 400px;
+  line-height: 50px;
+}
+
+/* ESEMPIO 9 */
+
+.flex-container-9{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+  background-color: aquamarine;
+}
+
+.flex-container-9 .box{
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  background-color: red;
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  font-size: 40px;
+}
+
+/* ESEMPIO 10 */
+
+.flex-container-10{
+  display: flex;
+  width: 800px;
+  height: 500px;
+  margin: auto;
+  background-color: aquamarine;
+}
+
+.flex-container-10 .box{
+  flex-basis: 100px;
+  flex-shrink: 0; /* fattore di riduzione 0 vuol dire che non si riduce */
+  height: 100px;
+  background-color: red;
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  font-size: 40px;
+}
+
+.flex-container-10 .due{
+  flex-shrink: 1; /* fattore di riduzione */
+}
+.flex-container-10 .tre{
+  flex-shrink: 2; /* fattore di riduzione, più è alto e più si riduce */
+}
+
+/* ESEMPIO 11 */
+
+.flex-container-11{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  background-color: aquamarine;
+}
+
+.flex-container-11 .box{
+  background-color: red;
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  font-size: 40px;
+}
+
+.flex-container-11 .uno{
+  flex-grow: 0; /* fattore di crescita -> 0 non cresce */
+}
+.flex-container-11 .due{
+  flex-grow: 1; /* fattore di crescita -> più è altro più cresce */
+}
+.flex-container-11 .tre{
+  flex-grow: 2;
+}
+.flex-container-11 .quattro{
+  flex-grow: 1;
+}
+
+
+/* ESEMPIO 11 bis */
+
+.flex-container-11bis{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 800px;
+  margin: auto;
+  background-color: aquamarine;
+}
+
+.flex-container-11bis .box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+
+.flex-container-11bis .uno{
+  flex-grow: 0; /* fattore di crescita -> 0 non cresce */
+}
+.flex-container-11bis .due{
+  flex-grow: 1; /* fattore di crescita -> più è altro più cresce */
+}
+.flex-container-11bis .tre{
+  flex-grow: 2;
+}
+.flex-container-11bis .quattro{
+  flex-grow: 1;
+}
+
+/* ESEMPIO 12 */
+
+.flex-container-12{
+  display: flex;
+  width: 800px;
+  height: 500px;
+  margin: auto;
+  background-color: aquamarine;
+}
+
+.flex-container-12 .box{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 10px;
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  font-size: 40px;
+}
+
+.flex-container-12 .uno{
+  order: 2;  /* posso cambiare l'ordine dei flex item */
+}
+.flex-container-12 .due{
+  order: 3;
+}
+.flex-container-12 .tre{
+  order: 1;
+}
+
+
+
+
+
+
+
+
+footer{
+  height: 500px;
+}
